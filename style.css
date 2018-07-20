@@ -14,13 +14,13 @@ body.beta {
     animation: AnimationName 30s ease infinite;
 }
 
-.show-when-beta {
+body:not(.beta) .show-when-beta {
     display: none !important;
 }
 
-body.beta .show-when-beta {
+/* body.beta .show-when-beta {
     display: initial;
-}
+} */
 
 .beta-mode {
     border: 1px solid #fff;
