@@ -1,0 +1,132 @@
+body {
+    background: linear-gradient(75deg, #ff0037, #6f00ff, #006bff, #6000ff, #ff00f5, #ff0014);
+    background-size: 1200% 1200%;
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+
+body.beta-mode {
+    background: linear-gradient(75deg, #3a3435, #3c3841, #76787a, #76787a, #3c3841,#3a3435);
+    background-size: 1200% 1200%;
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+.move-up-down {
+    animation: MoveUpDown 1.4s linear 3;
+    right: 0;
+    top: 0;
+}
+
+@keyframes MoveUpDown {
+    0%,
+    100% {
+        top: 0;
+    }
+    50% {
+        top: 10px;
+    }
+}
+
+.icon {
+    text-align: center;
+    background-repeat: no-repeat;
+}
+
+.tap-button {
+    margin: 5%;
+    border-radius: 100%;
+    width: 2.5em;
+    height: 2.5em;
+    background-size: contain;
+    position: absolute;
+}
+
+.play-button {
+    margin-top: 42vh;
+    width: 100px;
+    height: 100px;
+}
+
+.wrap {
+    text-align: center;
+    height: 97.5vh;
+    box-sizing: border-box;
+}
+
+#vu {
+    background: #ffffff0d;
+    margin-top: 50px;
+}
+
+.controls {
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.controls .control {
+    /* background: rgba(255, 255, 255, 0.055); */
+    height: 5em;
+    width: 5em;
+    position: fixed;
+}
+
+.control.top-left {
+    top: 0;
+    left: 0;
+}
+
+.control.top-right {
+    top: 0;
+    right: 0;
+}
+
+.control.bottom-left {
+    bottom: 0;
+    left: 0;
+}
+
+.control.bottom-right {
+    bottom: 0;
+    right: 0;
+}
