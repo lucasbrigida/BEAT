@@ -16,6 +16,7 @@ body.beta {
 
 body:not(.beta) .show-when-beta {
     display: none !important;
+    visibility: hidden;
 }
 
 /* body.beta .show-when-beta {
