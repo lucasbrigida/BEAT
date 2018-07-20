@@ -15,7 +15,7 @@ body.beta {
 }
 
 .show-when-beta {
-    display: none;
+    display: none !important;
 }
 
 body.beta .show-when-beta {
