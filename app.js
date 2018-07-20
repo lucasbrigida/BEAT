@@ -77,9 +77,13 @@ function setTouchCode(cb) {
  */
 
 function showEasterEgg() {
-    document.body.classList.toggle('beta-mode');
+    document.body.classList.toggle('beta');
 }
 
 Array.from(document.querySelectorAll('.control')).map(function(control) {
     control.addEventListener('click', setTouchCode(showEasterEgg));
+});
+
+document.querySelector('.beta-mode').addEventListener('click',function() {
+    location.href = 'https://www.google.com';
 });

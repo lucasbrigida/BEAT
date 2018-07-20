@@ -6,12 +6,32 @@ body {
     animation: AnimationName 30s ease infinite;
 }
 
-body.beta-mode {
-    background: linear-gradient(75deg, #3a3435, #3c3841, #76787a, #76787a, #3c3841,#3a3435);
+body.beta {
+    background: linear-gradient(75deg,#ffbc00, #ec8f0e, #f14a08, #dc0e0e, #ec0f8e,#3c0be8);
     background-size: 1200% 1200%;
     -webkit-animation: AnimationName 30s ease infinite;
     -moz-animation: AnimationName 30s ease infinite;
     animation: AnimationName 30s ease infinite;
+}
+
+.show-when-beta {
+    display: none;
+}
+
+body.beta .show-when-beta {
+    display: initial;
+}
+
+.beta-mode {
+    border: 1px solid #fff;
+    width: 100px;
+    padding: 5px;
+    background: #fff;
+    font-weight: bold;
+    font-family: monospace;
+    margin: auto;
+    margin-top: 15px;
+    outline: 0;
 }
 
 @-webkit-keyframes AnimationName {
